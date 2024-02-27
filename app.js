@@ -1,6 +1,5 @@
 //* * * * * * * * * * * * * REQUIRES * * * * * * * * * * *
 // paquetes
-import { require } from 'module';
 const express = require("express")
 const cors = require('cors')
 const baseDeDatos = require('./backend/utils/baseDeDatos')
