@@ -14,7 +14,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())   // Analiza las solicitudes JSON entrantes y coloca los datos analizados en formato req.body.
 // routes
-app.use('/cliente', clienteRoutes)
+app.get('/cliente', clienteRoutes)
 app.use('/admin', adminRoutes)
 app.use('/barbero', barberoRoutes)
 app.use(generalRoutes)
