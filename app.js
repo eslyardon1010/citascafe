@@ -19,9 +19,11 @@ app.use('/admin', adminRoutes)
 app.use('/barbero', barberoRoutes)
 app.use(generalRoutes)
 
-app.get('/', (req, res, next) => {
+/*app.get('/', (req, res, next) => {
   res.send('Todo ')
-})
+})*/
+
+app.get('/', clienteRoutes)
 
 
 app.listen(3000)
