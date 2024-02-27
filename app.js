@@ -20,7 +20,7 @@ app.use('/barbero', barberoRoutes)
 app.use(generalRoutes)
 
 app.get('/', (req, res, next) => {
-  generalRoutes
+  res.send('Todo Funciona Correctamente ')
 })
 
 
