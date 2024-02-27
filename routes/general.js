@@ -1,5 +1,6 @@
-const express = require('express')
 const router = require('./routes/routes');
+const express = require('express')
+
 // Controlador
 const controladorGeneral = require('../controllers/general')
 
