@@ -19,8 +19,8 @@ app.use('/admin', adminRoutes)
 app.use('/barbero', barberoRoutes)
 app.use(generalRoutes)
 
-app.get('/admin', (req, res, next) => {
-  res.send('Todo Funciona Correctamente ')
+app.get('/', (req, res, next) => {
+  res.send('Cargando ruta desde app.js')
 })
 
 
