@@ -1,7 +1,8 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "This is the backend of FadeFinder",
+  "description": "This is the backend of Catacamas",
+  "type": "module",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
