@@ -5,6 +5,7 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
+    "install": "npm install",
     "start": "node app.js",
     "dev": "nodemon app.js",
     "build": "vite build",
