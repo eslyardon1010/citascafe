@@ -2,12 +2,12 @@
 // paquetes
 const express = require("express")
 const cors = require('cors')
-const baseDeDatos = require('./backend/utils/baseDeDatos')
+const baseDeDatos = require('./utils/baseDeDatos')
 // routes
-const clienteRoutes = require('./backend/routes/cliente')
-const adminRoutes = require('./backend/routes/admin')
-const generalRoutes = require('./backend/routes/general')
-const barberoRoutes = require('./backend/routes/barbero')
+const clienteRoutes = require('./routes/cliente')
+const adminRoutes = require('./routes/admin')
+const generalRoutes = require('./routes/general')
+const barberoRoutes = require('./routes/barbero')
 
 // * * * * * * * * * * * * * * USE * * * * * * * * * * *
 const app = express()
