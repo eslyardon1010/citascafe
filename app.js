@@ -20,11 +20,10 @@ app.get('/cliente', clienteRoutes)
 app.use('/admin', adminRoutes)
 app.use('/barbero', barberoRoutes)
 
-router.get('/login', controladorGeneral.postLogin)
+router.get('/', controladorGeneral.postLogin)
 
 
 app.use(generalRoutes)
-
 
 
 
