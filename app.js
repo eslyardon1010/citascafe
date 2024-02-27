@@ -8,7 +8,7 @@ const clienteRoutes = require('./routes/cliente')
 const adminRoutes = require('./routes/admin')
 const generalRoutes = require('./routes/general')
 const barberoRoutes = require('./routes/barbero')
-const controladorGeneral = require('../controllers/general')
+const controladorGeneral = require('./controllers/general')
 
 
 // * * * * * * * * * * * * * * USE * * * * * * * * * * *
