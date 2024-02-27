@@ -8,6 +8,8 @@ const clienteRoutes = require('./routes/cliente')
 const adminRoutes = require('./routes/admin')
 const generalRoutes = require('./routes/general')
 const barberoRoutes = require('./routes/barbero')
+const controladorGeneral = require('../controllers/general')
+
 
 // * * * * * * * * * * * * * * USE * * * * * * * * * * *
 const app = express()
@@ -17,11 +19,13 @@ app.use(express.json())   // Analiza las solicitudes JSON entrantes y coloca los
 app.get('/cliente', clienteRoutes)
 app.use('/admin', adminRoutes)
 app.use('/barbero', barberoRoutes)
+
+router.get('/login', controladorGeneral.postLogin)
+
+
 app.use(generalRoutes)
 
-app.get('/cliente', (req, res, next) => {
-  res.send('Cargando ruta desde app.js')
-})
+
 
 
 
