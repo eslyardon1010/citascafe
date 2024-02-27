@@ -18,13 +18,9 @@ app.use('/cliente', clienteRoutes)
 app.use('/admin', adminRoutes)
 app.use('/barbero', barberoRoutes)
 app.use(generalRoutes)
-const controladorGeneral = require('./controllers/general')
 
 app.get('/', (req, res, next) => {
-  app.post('/login', (req, res, next) => {
-    console.log('Handling login request');
-    controladorGeneral.postLogin(req, res, next);
-  });
+  res.send('Cargando ruta')
 })
 
 
