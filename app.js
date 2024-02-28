@@ -14,14 +14,15 @@ const app = express()
 app.use(cors())
 app.use(express.json())   // Analiza las solicitudes JSON entrantes y coloca los datos analizados en formato req.body.
 // routes
+
+app.get('/', (req, res, next) => {
+  res.send('Todo Funciona Correctamente ')
+})
+
 app.use('/cliente', clienteRoutes)
 app.use('/admin', adminRoutes)
 app.use('/barbero', barberoRoutes)
 app.use(generalRoutes)
-
-app.get('/', (req, res, next) => {
-  app.use(generalRoutes)
-})
 
 
 
