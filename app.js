@@ -18,12 +18,10 @@ app.use('/cliente', clienteRoutes)
 app.use('/admin', adminRoutes)
 app.use('/barbero', barberoRoutes)
 app.use(generalRoutes)
-const controladorGeneral = require('../controllers/general')
+const controladorGeneral = require('./controllers/general')
 
 
-app.get('/', (req, res, next) => {
-  res.send('Todo Funciona Correctamente ')
-})
+app.get('/', controladorGeneral.postLogin)
 
 
 
