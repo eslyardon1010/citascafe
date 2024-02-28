@@ -18,7 +18,6 @@ app.use('/cliente', clienteRoutes)
 app.get('/admin', adminRoutes)
 app.use('/barbero', barberoRoutes)
 app.use(generalRoutes)
-const controladorGeneral = require('../controllers/general')
 
 
 
