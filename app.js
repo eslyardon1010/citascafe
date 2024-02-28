@@ -16,7 +16,7 @@ app.use(express.json())   // Analiza las solicitudes JSON entrantes y coloca los
 // routes
 
 app.get('/', (req, res, next) => {
-  res.send('Todo Funciona Correctamente ')
+ generalRoutes
 })
 
 app.use('/cliente', clienteRoutes)
